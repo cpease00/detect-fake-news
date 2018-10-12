@@ -13,3 +13,10 @@ Once the articles were vectorized, a number of meta-features were created in ord
 The difference between the two classes is stark at the extreme ends of the spectrum, but there is a large grey area in the middle. To model the probability of an article being reliable, a Multinomial Logistic Regression and Naïve Bayes Classifier were employed, using sklearn. The two represent discriminative and generative approaches respectively, and approached the same results. These two models were selected for their interpretability as well as ease of implementation. 
 
 ## Results
+In addition to the testing accuracy of 94%, the following ROC curves highlight the sensitivity of the chosen models.
+![LogisticRegression](https://github.com/cpease00/detect-fake-news/blob/master/roc_lr.jpg "LogReg ROC and Feature Importances")
+It is interesting to observe the differences in important features for each model, as it offers some insight as to how the decisions are being made. 
+
+![NaiveBayes](https://github.com/cpease00/detect-fake-news/blob/master/roc_nb.jpg "NBayes ROC and Feature Importances")
+
+It is clear that this is an effective method for quickly flagging articles that are of dubious reliability. However, the supervised nature of the approach is not representative of the real problem. While this model is very effective at generalizing on outside news data at the moment, over time it will become less powerful unless it is retrained on new labeled articles. The next steps will certainly be to pursue an unsupervised approach, and perhaps implement the model as a browser extension for easy use for individuals. Additional interpretability could be achieved with more interactivity, for example a dashboard with user-input would be great to show what types of writing style and language are more likely to classified as fake. 
