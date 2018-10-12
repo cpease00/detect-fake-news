@@ -1,5 +1,5 @@
 # Fake News Detection Classification Algorithm
-[Medium post](https://towardsdatascience.com/machine-learning-tackles-the-fake-news-problem-c3fa75549e52)
+Check out this [Medium post](https://towardsdatascience.com/machine-learning-tackles-the-fake-news-problem-c3fa75549e52) for more details
  ## The Solution to a Problem
  There is a vast quantity of misleading and false news articles spread throughout social media. This leads to a lot of misplaced fear, animosity, and recently attempts to sway political elections. It is very hard to detect 'fake news' when you see it, and there are too many articles to effectively combat their spread by eye. Machine learning techniques offer a clear, scalable solution for identification of malicious news articles. In this project the problem is tackled as a binary classification, using natural language processing (NLP) and supervised learning methods. Using a [Kaggle dataset](https://www.kaggle.com/c/fake-news) of articles from wide-ranging sources, a Naïve Bayes Classifier and Logistic Regression achieved a testing accuracy of 94%.
  
