@@ -10,4 +10,6 @@ The task at hand is of Natural Language Classification, which approached as a su
 Once the articles were vectorized, a number of meta-features were created in order to improve the discriminative power of the model. The number of numerals and average word length were chosen to gain sensitivity to different aspects of the article's style with simple calculations. In addition, simple sentiment metrics were calculated using Vader and Textblob to gauge polarity, subjectivity, and neutrality. Althogh these metrics had little difference in their distibution for the two classes, they nonetheless provided improved classification accuracy.
 
 ## Model Selection
-The difference between the two classes is stark 
+The difference between the two classes is stark at the extreme ends of the spectrum, but there is a large grey area in the middle. To model the probability of an article being reliable, a Multinomial Logistic Regression and Naïve Bayes Classifier were employed, using sklearn. The two represent discriminative and generative approaches respectively, and approached the same results. These two models were selected for their interpretability as well as ease of implementation. 
+
+## Results
