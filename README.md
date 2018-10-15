@@ -16,12 +16,10 @@ This is an example of the vector associated with one of the articles. Most vecto
 ## Feature Engineering
 Once the articles were vectorized, a number of meta-features were created in order to improve the discriminative power of the model. The number of numerals and average word length were chosen to gain sensitivity to different aspects of the article's style with simple calculations. In addition, simple sentiment metrics were calculated using Vader and Textblob to gauge polarity, subjectivity, and neutrality. Althogh these metrics had little difference in their distibution for the two classes, they nonetheless provided improved classification accuracy.
 
-
 Below is the distribution of sentiment scores assigned to each text, produced by TextBlob:
 
 ![Polarity](https://github.com/cpease00/detect-fake-news/blob/master/Sentiment_Polarity_Distribution.jpg)
-
-And below you can see the distribution of subjectivity scores:
+The general overlap indicates that this variable alone would not suffice to separate the two populations by traditional statistical methods. Below you can see the distribution of subjectivity scores:
 
 ![Subjectivity](https://github.com/cpease00/detect-fake-news/blob/master/Subjectivity_Distribution.jpg)
 
